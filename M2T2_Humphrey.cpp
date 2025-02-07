@@ -13,9 +13,13 @@ int main(){
 
     cout << "What is your name? " << endl;
     cin >> name;
+    cout << "How many apples are for sale?" << endl;
+    cin >> num_apples;
+    cout << "How much per apple?" << endl;
+    cin >> price_each;
 
      
-    cout << "Welcome to  " << name << "'s apple store" << endl;
+    cout << "Welcome to " << name << "'s apple store" << endl;
     cout << "We have " << num_apples << " in stock" << endl;
     cout << "Each apple costs " << price_each << endl;
 
