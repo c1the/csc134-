@@ -6,6 +6,7 @@ Gabrielle Humphrey
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void question1();
@@ -69,7 +70,7 @@ void question1() {
     cin >> rain3;
     
     double average = (rain1 + rain2 + rain3) / 3.0;
-    average = static_cast<int>(average * 100 + 0.5) / 100.0;
+    cout << fixed << setprecision(2);
     cout << "The average rainfall for " << month1 << ", " << month2 
          << ", and " << month3 << " is " << average << " inches.\n";
 }
@@ -109,10 +110,10 @@ void question3() {
     do {
         cout << "Enter a number (1-10): ";
         cin >> number;
-        if (number < 1 || number > 10) {
+        if (number < 1 or number > 10) {
             cout << "Number must be between 1 and 10.\n";
         }
-    } while (number < 1 || number > 10);
+    } while (number < 1 or number > 10);
     
     cout << "The Roman numeral version of " << number << " is ";
     
@@ -144,7 +145,7 @@ void question4() {
         cout << "Enter your choice (1-4): ";
         cin >> choice;
         
-        if (choice < 1 || choice > 4) {
+        if (choice < 1 or choice > 4) {
             cout << "The valid choices are 1 through 4. Please try again.\n";
             continue;
         }
@@ -212,7 +213,6 @@ void question5() {
     } while (hours < 1);
     
     cout << "\nHour\tDistance Traveled\n";
-    cout << "--------------------------------\n";
     
     for (int hour = 1; hour <= hours; hour++) {
         cout << hour << "\t" << (speed * hour) << endl;
