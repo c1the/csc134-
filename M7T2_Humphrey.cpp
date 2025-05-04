@@ -22,7 +22,6 @@ class Box {
     double getVolume() const;
 };
 
-// Member function definitions
 void Box::setWidth(double w) {
     width = w;
 }
@@ -51,7 +50,6 @@ double Box::getVolume() const {
     return width * length * height;
 }
 
-// Main function
 int main() {
     Box myBox;
     double w, l, h;
